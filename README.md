@@ -8,68 +8,86 @@ After a bit of exploring, I found a game object `PIXI.game.prodigy`. It seems to
 There are lots of things to explore! Let's go look at some of the things.
 
 ```
-> Object.keys(PIXI.game.prodigy).map(i => `    ${typeof PIXI.game.prodigy[i]}, ${i}`).join("\n")
-    string, version
-    object, gameContainer
+> Object.keys(PIXI.game.prodigy.player).map(i => `    ${typeof PIXI.game.prodigy.player[i]}, ${i}`).join("\n")
+    boolean, immortal
+    boolean, justLeveled
+    number, starsEarned
+    object, data
+    object, modifiers
+    string, type
+    object, team
+    object, source
     object, game
-    object, player
-    object, _user
-    object, breadcrumbManager
-    number, updateCount
-    object, assets
-    object, load
-    object, graphics
-    object, audio
-    object, giftBoxController
-    object, battle
-    object, pvp
+    boolean, inPVP
+    number, catchAttempt
+    number, starsToProcess
+    number, starsRewardBase
+    number, starsReward
+    number, pvpHP
+    boolean, isOpponent
+    object, onHPChange
+    object, appearance
+    object, equipment
+    object, tutorial
+    object, kennel
+    object, quests
+    object, house
+    object, backpack
     object, achievements
-    object, colorReplaceController
-    object, automation
-    object, notifications
-    object, open
-    object, effects
-    object, event
-    object, eventBroadcaster
-    object, dialogue
-    object, education
-    object, skin
-    object, create
-    object, icon
-    object, animation
-    object, giftBoxNetworkHandler
-    object, mailNetworkHandler
-    object, friendsListNetworkHandler
-    object, titansNetworkHandler
-    object, pvpNetworkHandler
-    object, messageListener
+    object, state
+    boolean, isMember
+    number, userID
+    boolean, appearanceChanged
+    object, chatID
+    object, emoteID
+    object, danceID
+    number, grade
     object, world
-    object, dialogues
-    object, hints
-    object, debugMisc
-    object, debugBattle
-    object, debugQuests
-    number, totalElapsedTime
-    object, elapsedTimeBuffer
-    number, frameBufferMaxSize
-    number, elapsedTimeIndex
-    boolean, isPendingResumeRecordFPS
-    number, averageSumFPS
-    number, averageCountFPS
-    boolean, recordFPS
-    number, previousNow
-    object, textureBelow
-    object, textureAbove
-    object, textureMenu
-    object, spinner
-    object, _inputBlocker
-    object, timeManager
-    object, urlProvider
-    object, metricsManager
-    object, classModeController
-    object, chat
-    object, network
-    object, bounty
-    object, attacks
-    object, statusEffects
+    object, coOpTeam
+    boolean, earlyBirdLastChance
+    object, transformID
+    object, currentVideoSkillId
+    boolean, saveEnabled
+    number, curriculumTreeID
+    string, parentEmail
+    object, registerDate
+    object, owners
+    object, classIDs
+    object, playerParents
+    object, playerTeachers
+    string, memberStartDate
+    object, memberEndDate
+    boolean, memberPrompt
+    string, locationSelectionType
+    string, username
+    object, password
+    number, spellStreak
+    boolean, parentalLink
+    boolean, isClassCodeAttached
+    boolean, overrideClassSelect
+    boolean, updated
+    string, lastVisited
+    object, memberShareDate
+    boolean, tutorialCompletedThisSession
+    boolean, hasUsedTicket
+    object, dailyQuestions
+    object, daily
+    object, name
+    number, broadcastId
+```
+
+Of all of these, a few stand out in particular.
+```
+    boolean, immortal
+    number, starsEarned
+    object, data
+    object, modifiers
+    number, catchAttempt
+    number, starsToProcess
+    number, starsReward
+    object, kennel
+    object, backpack
+    boolean, isMember
+    string, username
+    object, password
 ```
