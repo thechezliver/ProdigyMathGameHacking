@@ -79,15 +79,17 @@ There are lots of things to explore! Let's go look at some of the things.
 Of all of these, a few stand out in particular.
 ```
     boolean, immortal
-    number, starsEarned
     object, data
     object, modifiers
-    number, catchAttempt
     number, starsToProcess
-    number, starsReward
     object, kennel
     object, backpack
     boolean, isMember
     string, username
     object, password
+```
+
+We can get member benefits for ONE session! As soon as the window is closed, you'll need to run this Javascript again.
+```
+javascript:PIXI.game.prodigy.player.isMember=true
 ```
