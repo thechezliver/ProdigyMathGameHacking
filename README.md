@@ -93,7 +93,26 @@ Of all of these, a few stand out in particular.
 
 # Hacks
 
-### Member Hack
+### boolean, immortal
+TODO: Figure out exactly what this does.
+It probably makes the player immortal, but I haven't tested this yet.
+
+### object, data
+Contains most of the persistent player data, which is pretty cool I guess.
+
+### object, modifiers
+It seems like this was a dev testing tool they didn't take out? Allows for insane health boosts/damage boosts when fighting computers. When fighting another player, it appears you have buffs on your computer, but you're dealing/taking damage normally.
+
+### number, starsToProcess
+After fighting, you and your pets are awarded stars. Making this number very large, combined with `isMember` allows for going SKYHIGH TO LEVEL 100!!!
+
+### object, kennel
+Contains all the data for your pets, such as what pets you have, their level, xp, and I'm pretty sure it contains their health...
+
+### object, backpack
+The backpack contains a list of all your items, and how many you have of each.
+
+### boolean, isMember
 We can get member benefits for ONE session! As soon as the window is closed, you'll need to run this Javascript again.
 ```
 javascript:PIXI.game.prodigy.player.isMember=true
