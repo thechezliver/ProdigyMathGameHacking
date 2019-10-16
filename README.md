@@ -7,6 +7,7 @@ After a bit of exploring, I found a game object `PIXI.game.prodigy`. It seems to
 
 There are lots of things to explore! Let's go look at some of the things.
 
+## Main Keys
 ```
 > Object.keys(PIXI.game.prodigy.player).map(i => `    ${typeof PIXI.game.prodigy.player[i]}, ${i}`).join("\n")
     boolean, immortal
@@ -76,6 +77,7 @@ There are lots of things to explore! Let's go look at some of the things.
     number, broadcastId
 ```
 
+## Main Points
 Of all of these, a few stand out in particular.
 ```
     boolean, immortal
@@ -89,6 +91,9 @@ Of all of these, a few stand out in particular.
     object, password
 ```
 
+# Hacks
+
+### Member Hack
 We can get member benefits for ONE session! As soon as the window is closed, you'll need to run this Javascript again.
 ```
 javascript:PIXI.game.prodigy.player.isMember=true
