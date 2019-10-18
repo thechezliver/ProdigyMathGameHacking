@@ -103,8 +103,11 @@ Contains most of the persistent player data, which is pretty cool I guess.
 ### object, modifiers
 It seems like this was a dev testing tool they didn't take out? Allows for insane health boosts/damage boosts when fighting computers. When fighting another player, it appears you have buffs on your computer, but you're dealing/taking damage normally.
 
-### number, starsToProcess
+### number, data.starsToProcess
 After fighting, you and your pets are awarded stars. Making this number very large, combined with `isMember` allows for going SKYHIGH TO LEVEL 100!!!
+```javascript
+javascript:PIXI.game.prodigy.player.data.storedMemberStars=99999999999999;
+```
 
 ### object, kennel
 Contains all the data for your pets, such as what pets you have, their level, xp, and I'm pretty sure it contains their health...
